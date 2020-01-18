@@ -1,9 +1,15 @@
+
 <template>
-  <div>Statistics.vue</div>
+  <div>
+    Statistics.vue
+    <Nav />
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Statistics"
+};
 </script>
 
 <style lang="scss" scoped>
