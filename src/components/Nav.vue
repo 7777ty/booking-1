@@ -12,6 +12,8 @@ export default {};
 
 <style lang="scss" scoped>
 .nav {
+  display: flex;
   border: 1px solid red;
+  justify-content: space-around;
 }
 </style>
