@@ -1,7 +1,7 @@
 <template>
   <div class="nav-wrapper">
     <div class="money">
-        <slot/>
+      <slot />
     </div>
     <Nav />
   </div>
@@ -15,13 +15,11 @@ export default {
 
 <style lang="scss" scoped>
 .nav-wrapper {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 .money {
-  border: 1px solid blue;
   overflow: auto;
   flex-grow: 1;
 }
