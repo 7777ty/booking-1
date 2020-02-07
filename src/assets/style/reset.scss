@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+ul,ol{
+  list-style: none;
+}
+button,input{
+  font:inherit;
+}
+:focus{
+  outline: none;
+}
