@@ -3,19 +3,24 @@
         <number-pad/>
         <types/>
         <notes/>
-        <tags/>
+        <tags :data-source.sync="tags"/>
 
     </Layout>
 </template>
 
-<script lang='ts'>
+<script>
     import NumberPad from '@/components/Money/numberPad.vue';
     import Tags from '@/components/Money/tags.vue';
     import Types from '@/components/Money/types.vue';
     import Notes from '@/components/Money/notes.vue';
     export default {
         name: 'Money',
-        components: {Notes, Types, Tags, NumberPad}
+        components: {Notes, Types, Tags, NumberPad},
+        data(){
+            return{
+            tags:['衣','食','住','行']
+        }
+        }
     };
 </script>
 
