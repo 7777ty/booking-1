@@ -16,9 +16,7 @@
     export  default  class notes extends Vue{
     value='';
     }
-    // export default {
-    //     name: 'notes'
-    // };
+
 </script>
 
 <style lang='scss' scoped>
