@@ -1,7 +1,7 @@
 <template>
     <div class="numberPad">
         <div class="output">{{output}}</div>
-        <div class="buttons clearfix">
+        <div class="buttons">
             <button @click="inputContent">1</button>
             <button @click="inputContent">2</button>
             <button @click="inputContent">3</button>
@@ -58,6 +58,8 @@
     }
     OK(){
         this.$emit('update:value',this.output);
+        this.$emit('submit',this.output);
+        this.output='0';
     }
     }
 
