@@ -11,7 +11,8 @@
                       field-name="标签名" placeholder="请输入标签名"/>
         </div>
         <div class="button-wrapper">
-            <Button @click="remove() ; goBack()" >删除标签</Button>
+            <Button class="saveButton" @click="goBack()" >保存标签</Button>
+            <Button class="deleteButton" @click="remove() ; goBack()" >删除标签</Button>
         </div>
     </Layout>
 </template>
@@ -81,5 +82,9 @@
         text-align: center;
         padding: 16px;
         margin-top: 44-16px;
+        > .saveButton{
+            background: green;
+            margin-right: 15px;
+        }
     }
 </style>
