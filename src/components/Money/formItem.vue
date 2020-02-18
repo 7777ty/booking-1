@@ -30,7 +30,7 @@
 <style lang='scss' scoped>
     .formItem {
         font-size: 14px;
-        background: #f5f5f5;
+        background: white;
         padding: 0 16px;
         display: flex;
         align-items: center;
