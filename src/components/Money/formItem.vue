@@ -3,7 +3,6 @@
         <label class="formItem">
             <span>{{this.fieldName}}</span>
             <input type="text" v-model="value"
-                   @input="onValueChanged($event.target.value)"
                    :placeholder="placeholder">
         </label>
     </div>
@@ -19,7 +18,7 @@
 
     @Prop({required:true}) fieldName!:string;
     @Prop()placeholder?:string;
-        @Watch('value')
+
         onValueChanged(value:string){
         this.$emit('update:value',value);
     }
