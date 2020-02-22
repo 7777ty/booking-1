@@ -12,7 +12,7 @@
         </div>
         <div class="button-wrapper">
             <Button class="saveButton" @click="goBack()" >保存标签</Button>
-            <Button class="deleteButton" @click="remove() ; goBack()" >删除标签</Button>
+            <Button class="deleteButton" @click="remove()" >删除标签</Button>
         </div>
     </Layout>
 </template>
@@ -45,7 +45,11 @@
         }
         remove(){
             if (this.tag) {
-                tagListModel.remove(this.tag.id);
+                if(tagListModel.remove(this.tag.id)){
+                    this.$router.back();
+                }else {
+                    window.alert('删除失败');
+                }
             }
         }
         goBack(){
