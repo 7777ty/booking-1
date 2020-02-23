@@ -25,4 +25,6 @@ interface Window {
     createTag:(name:string)=>void
     removeTag:(name:string)=>boolean
     updateTag:(id:string,name:string)=>'success'|'not found'|'duplicated'
+    recordList:recordItem[]
+    createRecord:(record:recordItem)=>void
 }
