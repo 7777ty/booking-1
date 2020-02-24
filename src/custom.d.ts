@@ -19,5 +19,3 @@ type TagListModel = {
     save: () => void
 }
 
-interface Window {
-}
