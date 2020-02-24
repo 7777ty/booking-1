@@ -33,9 +33,6 @@
            tags:[],notes:'',type:'-',amount:0
        };
 
-        onUpdateTags(value:string[]){
-           this.record.tags=value;
-        }
         onUpdateNotes(value:string){
            this.record.notes=value;
         }
