@@ -23,7 +23,7 @@
     import Button from "@/components/Button";
 
     @Component({
-        components: {Button}
+        components: {Button},
     })
     export default class Labels extends Vue {
         //TODO
