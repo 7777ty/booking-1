@@ -19,3 +19,8 @@ type TagListModel = {
     save: () => void
 }
 
+type RootState={
+    recordList :recordItem[],
+    tagList:Tag[],
+    currentTag?:Tag
+}

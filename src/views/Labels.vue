@@ -26,15 +26,13 @@
 
     @Component({
         components: {Button},
-        computed:{
-            tags(){
-                return this.$store.state.tagList;
-            }
-        }
+
     })
     export default class Labels extends mixins(TagHelper) {
-
-        beforecreate(){
+        get tags(){
+            return this.$store.state.tagList;
+        }
+        created(){
             this.$store.commit('fetchTags');
         }
     }
