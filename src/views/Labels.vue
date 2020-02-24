@@ -24,14 +24,21 @@
 
     @Component({
         components: {Button},
+        computed:{
+            tags(){
+                return this.$store.state.tagList;
+            }
+        }
     })
     export default class Labels extends Vue {
-        //TODO
-        tags=[];
-        // tags = store.tagList;
+
+        beforecreate(){
+            this.$store.commit('fetchTags');
+        }
         createTag() {
             const name = window.prompt('请输出标签名');
             if (name) {
+                this.$store.commit('createTag',name);
                 //TODO
                //store.createTag(name);
             }
