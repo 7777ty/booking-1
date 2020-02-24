@@ -8,7 +8,7 @@
                       @update:value="onUpdateNotes"
             />
         </div>
-        <tags :data-source.sync="tags" @update:value="onUpdateTags"/>
+        <tags />
         {{recordList}}
     </Layout>
 </template>
