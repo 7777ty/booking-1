@@ -24,7 +24,7 @@
 
     @Component
 
-    export default class tags extends mixins(TagHelper) {
+    export default class Tags extends mixins(TagHelper) {
 
         selectedTags: string[] = [];
         get tagList(){

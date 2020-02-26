@@ -74,10 +74,8 @@ const store= new Vuex.Store({
           const tag = state.tagList.filter(item => item.id === id)[0];
           tag.name = name;
           store.commit('saveTags');
-          return 'success';
+
         }
-      } else {
-        return 'not found';
       }
     },
     saveTags(state) {
