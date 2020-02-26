@@ -5,7 +5,7 @@
         <div class="notes">
             <form-item field-name="备注"
                       placeholder="在这里输入备注"
-                      @update:value="onUpdateNotes"
+                       :value.sync="record.notes"
             />
         </div>
         <tags />
@@ -42,7 +42,7 @@
         }
         saveRecord(){
             this.$store.commit('createRecord',this.record);
-
+            this.record.notes='';
         }
        recordTypeList =recordTypeList;
     }
