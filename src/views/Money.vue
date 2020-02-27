@@ -9,7 +9,6 @@
             />
         </div>
         <tags />
-        {{recordList}}
     </Layout>
 </template>
 
